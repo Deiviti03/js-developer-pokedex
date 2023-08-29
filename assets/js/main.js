@@ -5,9 +5,13 @@ const maxRecords = 151
 const limit = 10
 let offset = 0;
 
+function getPoke(id){
+    window.location.href = `poke-details.html?id=${id}`;
+}
+
 function convertPokemonToLi(pokemon) {
     return `
-        <li class="pokemon ${pokemon.type}">
+        <li id="${pokemon.number}" onclick="getPoke(id)" class="pokemon ${pokemon.type}">
             <span class="number">#${pokemon.number}</span>
             <span class="name">${pokemon.name}</span>
 

@@ -14,6 +14,26 @@ body {
     background-color: #fff;
 }
 
+.container{
+    width: 100%;
+    height: 200px;
+    border-radius: 1rem;
+}
+
+.pokemon-detail{
+    background-color: white;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokemon-image{
+    margin-top: -200px;
+}
+
 @media screen and (min-width: 992px) {
     .content {
         max-width: 992px;

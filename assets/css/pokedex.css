@@ -79,11 +79,16 @@
 }
 
 .pokemon {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     margin: .5rem;
     padding: 1rem;
     border-radius: 1rem;
+}
+
+.pokemon:hover {
+   border: 1px solid #000;
 }
 
 .pokemon .number {
@@ -110,6 +115,10 @@
     padding: 0;
     margin: 0;
     list-style: none;
+}
+
+.pokemon .detail .format{
+    display: flex;
 }
 
 .pokemon .detail .types .type {
